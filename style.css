@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+
+.logo-image {
+  width: 100px; 
+  /* max-width: 100%;  */
+  /* height: auto;  */
+}
+
+
+h1:hover {
+  background-color: #0f0e0e;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header {
+  background-color: #222;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language select {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.language button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 15px;  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main_image {
+  position: relative;
+  text-align: center;
+}
+
+.main_image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.head_con {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  color: white;
+  padding: 20px;
+  font-size: 35px;
+  line-height: 1.4;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.hero {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 65%;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 75%;
+}
+
+.plan {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  background-color: #383838;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan h3 {
+  font-size: 24px;
+  color: #e50914;
+  margin-bottom: 10px;
+}
+
+.plan p {
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.plan button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.plan button:hover {
+  background-color: #b20710;
+}
+
+.email1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 40px auto;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.email1 input[type="email"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+}
+
+.email1 button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email1 button:hover {
+  background-color: #b20710;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-item {
+  min-width: 200px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.slider-item img {
+  width: 75%;
+  border-radius: 8px;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #282828;
+  padding: 30px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card i {
+  font-size: 40px;
+  color: #e50914;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.card:hover i {
+  color: #ff5c5c;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.faq-container {
+  width: 500px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+}
+.faq-container :hover{
+  color: #b3b3b3;
+}
+
+
+.faq-title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  background-color: #222;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+  border-top: 1px solid #444;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-question-icon {
+  font-size: 18px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #141414;
+}
+
+.column {
+  flex: 1 1 150px;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #007bff;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.language-dropdown {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-dropdown:hover {
+  background-color: #444;
+}
+
+.footer-text {
+  font-size: 13px;
+  color: #737373;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .link {
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
