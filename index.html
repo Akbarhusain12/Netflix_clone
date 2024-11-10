@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="netflix_logo">
+        <img src="./Images/logo.png" alt="Netflix Logo" class="logo-image">
+      </h1>
+      
+      <div class="language">
+        <select>
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+        <button>Sign In</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main_image">
+        <img
+          src="https://assets.nflxext.com/ffe/siteui/vlv3/61b94313-a53b-4a73-b973-7632aafc9d8f/web_tall_panel/IN-en-20241104-TRIFECTA-perspective_5e478a9d-0baf-4a93-8987-7a8ebf6f7fe8_large.jpg"
+          alt="Main Image"
+        />
+        <div class="head_con">
+          Endless entertainment starts here. <br />
+          Plans from ₹149. <br />
+          <h6 style="font-weight: normal">
+            Cancel or switch plans at any time.
+          </h6>
+        </div>
+      </div>
+
+      <!-- <div class="hero">
+        <h1>Choose Your Plan</h1>
+      </div> -->
+
+      <!-- <div class="plan-container">
+        <div class="plan">
+          <h3>Mobile</h3>
+          <p>480P</p>
+          <p>Fair Video Quality</p>
+          <p>For Your Phone or Tablet</p>
+          <p>₹149/Mon</p>
+          <button>Select</button>
+        </div>
+        <div class="plan">
+          <h3>Basic</h3>
+          <p>720P</p>
+          <p>Good Video Quality</p>
+          <p>For Your Phone, Tablet, Laptop, and TV</p>
+          <p>₹199/Mon</p>
+          <button>Select</button>
+        </div>
+        <div class="plan">
+          <h3>Standard</h3>
+          <p>1080P</p>
+          <p>Good Video Quality</p>
+          <p>For Your Phone, Tablet, Laptop, and TV</p>
+          <p>₹499/Mon</p>
+          <button>Select</button>
+        </div>
+        <div class="plan">
+          <h3>Premium</h3>
+          <p>4K + HDR</p>
+          <p>Best Video Quality</p>
+          <p>For Your Phone, Tablet, Laptop, and TV</p>
+          <p>₹649/Mon</p>
+          <button>Select</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="email1">
+      <input type="email" placeholder="Email Address" />
+      <button>Get Started</button>
+    </div>
+
+    <h1>Trending Now</h1>
+    <div class="slider-wrapper" id="slider1">
+      <div class="slider-container">
+        <div class="slider-item">
+          <img src="./Images/moives_card.jpg" alt="Image 1" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moives_card1.jpg" alt="Image 2" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moives_card2.jpg" alt="Image 3" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moives_card3.jpg" alt="Image 4" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moives_card5.jpg" alt="Image 5" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_moives1.jpg" alt="Image 6" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_moive.jpg" alt="Image 7" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_movies4.jpg" alt="Image 8" />
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <button class="nav-button" onclick="scrollSlider('slider1', -1)">
+          &#10094;
+        </button>
+        <button class="nav-button" onclick="scrollSlider('slider1', 1)">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <h1>Only on Netflix</h1>
+    <div class="slider-wrapper" id="slider2">
+      <div class="slider-container">
+        <div class="slider-item">
+          <img src="./Images/movie_card6.webp" alt="Image 1" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moive_card7.webp" alt="Image 2" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moive_card8.jpg" alt="Image 3" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moive_card9.jpg" alt="Image 4" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/moive_card10.webp" alt="Image 5" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_moives1.jpg" alt="Image 6" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_moive.jpg" alt="Image 7" />
+        </div>
+        <div class="slider-item">
+          <img src="./Images/card_movies4.jpg" alt="Image 8" />
+        </div>
+      </div>
+
+      <div class="slider-nav">
+        <button class="nav-button" onclick="scrollSlider('slider2', -1)">
+          &#10094;
+        </button>
+        <button class="nav-button" onclick="scrollSlider('slider2', 1)">
+          &#10095;
+        </button>
+      </div>
+    </div>
+
+    <h1>More reasons to join</h1>
+    <div class="container1">
+      <div class="card">
+        <i class="fas fa-thumbs-up"></i>
+        <h2>Stories tailored to your taste</h2>
+        <p>Enjoy content based on your interests.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-calendar-times"></i>
+        <h2>Cancel or switch plans anytime</h2>
+        <p>No commitments, flexible plans.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-child"></i>
+        <h2>A place just for kids</h2>
+        <p>Safe, fun, and educational content.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-mobile-alt"></i>
+        <h2>For your phone, tablet, laptop, and TV</h2>
+        <p>Access on any device, anytime.</p>
+      </div>
+    </div>
+
+    <script>
+      function scrollSlider(sliderId, direction) {
+        const slider = document
+          .getElementById(sliderId)
+          .querySelector(".slider-container");
+        const scrollAmount = 250;
+        slider.scrollBy({
+          left: direction * scrollAmount,
+          behavior: "smooth",
+        });
+      }
+    </script>
+    <br /><br />
+
+    <div class="faq-container">
+      <div class="faq-title">Frequently Asked Questions</div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What is Netflix?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Netflix is a streaming service that offers a wide variety of
+          award-winning TV shows, movies, anime, documentaries and more – on
+          thousands of internet-connected devices.<br /><br />
+          You can watch as much as you want, whenever you want, without a single
+          ad – all for one low monthly price. There's always something new to
+          discover, and new TV shows and movies are added every week!
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How much does Netflix cost?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Netflix offers different plans at various price points. Choose the
+          plan that fits your needs.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Where can I watch?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          You can watch on your smartphone, tablet, Smart TV, laptop, or
+          streaming device, all for one fixed monthly fee.
+        </div>
+      </div>
+
+  
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How do I cancel?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          You can cancel your Netflix membership anytime without any
+          cancellation fees.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What can I watch on Netflix?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Netflix has a vast library of feature films, documentaries, TV shows,
+          anime, award-winning Netflix originals, and more. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Placeat repellendus et quam
+          quasi? Architecto quasi magnam aut, iusto rem ducimus.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Is Netflix good for kids?
+          <span class="faq-question-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          The Netflix Kids experience provides a safe viewing experience for
+          kids, with parental controls to restrict content and profile access.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          sapiente neque quo! Accusamus eos maxime molestiae quisquam nihil ex
+          aspernatur.
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleFaq(element) {
+        const faqItem = element.parentElement;
+        faqItem.classList.toggle("active");
+        const icon = faqItem.querySelector(".faq-question-icon");
+        icon.textContent = faqItem.classList.contains("active") ? "+" : "+";
+      }
+    </script>
+
+    <div class="email1">
+      <button>Get Started</button>
+    </div>
+
+    <div class="footer-container">
+      <div class="column">
+        <a href="#" class="link">FAQ</a>
+        <a href="#" class="link">Investor Relations</a>
+        <a href="#" class="link">Privacy</a>
+        <a href="#" class="link">Speed Test</a>
+      </div>
+      <div class="column">
+        <a href="#" class="link">Help Center</a>
+        <a href="#" class="link">Jobs</a>
+        <a href="#" class="link">Cookie Preferences</a>
+        <a href="#" class="link">Legal Notice</a>
+      </div>
+      <div class="column">
+        <a href="#" class="link">Account</a>
+        <a href="#" class="link">Ways to Watch</a>
+        <a href="#" class="link">Corporate Information</a>
+        <a href="#" class="link">Only on Netflix</a>
+      </div>
+      <div class="column">
+        <a href="#" class="link">Media Center</a>
+        <a href="#" class="link">Terms of Use</a>
+        <a href="#" class="link">Contact Us</a>
+      </div>
+      <div class="column">
+        <div class="language-selector">
+          <select class="language-dropdown">
+            <option value="en">English</option>
+            <option value="es">हिन्दी</option>
+          </select>
+        </div>
+        <p class="footer-text">© 2023 Netflix, Inc.</p>
+      </div> -->
+  </body>
+</html>
+
